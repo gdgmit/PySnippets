@@ -162,6 +162,22 @@ cofactor(matrix, row, col)
   4
   ```
 
+### Adjugate
+
+Calculates the adjugate of a matrix.
+
+```python
+adjugate(matrix)
+```
+
+- **Args**: A matrix `matrix`.
+- **Returns**: The adjugate matrix, which is the transpose of the cofactor matrix of the given input square matrix.
+- **Example**:
+  ```python
+  >>> adjugate([1, 2, 3], [0, 1, 4], [5, 6, 0])
+  [[-24, 12, -2], [20, -15, 3], [-5, 4, -1]]
+  ```
+
 ---
 
 ## Complex Numbers
