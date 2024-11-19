@@ -1,6 +1,6 @@
 # test_list_manipulation.py
 import unittest
-from pysnippets.lists.list_manipulation import (
+from pysnippets.list.list_manipulation import (
     add_to_list,
     remove_from_list,
     find_in_list,

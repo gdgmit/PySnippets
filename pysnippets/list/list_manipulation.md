@@ -102,4 +102,80 @@ This function sorts the list based on the frequency of elements in descending or
 
 * * *
 
+### List Difference
+
+This function finds the difference of two lists.
+
+    list_difference(lst1, lst2)
+
+*   **Args**:
+    *   `lst1` (list): The first list.
+    *   `lst2` (list): The second list.
+*   **Returns**:
+    *   `list`: The difference of the two lists.
+
+**Example**:
+
+    >>> list_difference([1, 2, 3], [2, 3, 4])
+    [1]
+
+* * *
+
+### List Union
+
+This function finds the Union of two lists.
+
+    list_union(lst1, lst2)
+
+*   **Args**:
+    *   `lst1` (list): The first list.
+    *   `lst2` (list): The second list.
+*   **Returns**:
+    *   `list`: The union of the two lists.
+
+**Example**:
+
+    >>> list_union([1, 2, 3], [2, 3, 4])
+    [1, 2, 3, 4]
+
+* * *
+
+### Rotate List
+
+This function rotate elements left or right by a given number of steps.
+
+    rotate_list(lst, count, direction)
+
+*   **Args**:
+    *   `lst1` (list): The list to rotate.
+    *   `count` (int): Number of positions to rotate.
+    *   `direction` (str): 'left' or 'right' for the direction of rotation.
+*   **Returns**:
+    *   `list`: Rotated List.
+
+**Example**:
+
+    >>> rotate_list([1, 2, 3, 4], 3, "left")
+    [4, 1, 2, 3]
+
+* * *
+
+### Random Pick
+
+This function picks a random element from the list.
+
+    random_pick(lst)
+
+*   **Args**:
+    *   `lst1` (list): The list to pick a random element from.
+*   **Returns**:
+    *   `Any`: An element of any datatype present in the list.
+
+**Example**:
+
+    >>> random_pick([1, 2, 3, 4])
+    1
+
+* * *
+
 Feel free to reach out if you have any questions about how to use the List Manipulation Module!
