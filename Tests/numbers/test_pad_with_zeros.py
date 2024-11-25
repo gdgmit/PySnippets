@@ -1,6 +1,6 @@
 
 import unittest
-from pad_with_zeros import pad_with_zeros
+from pysnippets.Numbers.pad_with_zeros import pad_with_zeros
 
 class TestPadWithZeros(unittest.TestCase):
     def test_pad_with_zeros(self):

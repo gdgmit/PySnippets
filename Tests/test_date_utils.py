@@ -1,5 +1,5 @@
 import unittest
-from date_utils import convert_to_iso8601
+from pysnippets.date_utils import convert_to_iso8601
 
 class TestDateConversion(unittest.TestCase):
     def test_valid_dates(self):
