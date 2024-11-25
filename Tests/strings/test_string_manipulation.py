@@ -1,6 +1,6 @@
 # test_string_manipulation.py
 import unittest
-from pysnippets.strings.string_manipulation import (
+from pysnippets.Strings.string_manipulation import (
     reverse_string,
     count_vowels,
     to_uppercase,

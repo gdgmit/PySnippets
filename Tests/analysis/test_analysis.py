@@ -1,5 +1,5 @@
 import pandas as pd
-from pysnippets.analysis.datautils import *  # Assuming the class is defined in eda_functions.py
+from pysnippets.analysis.DataUtils import *  # Assuming the class is defined in eda_functions.py
 import numpy as np
 
 
