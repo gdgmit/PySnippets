@@ -1,6 +1,6 @@
 
 import unittest
-from format_to_2_decimal import format_to_2_decimal
+from pysnippets.Numbers.format_to_2_decimal import format_to_2_decimal
 
 class TestFormatTo2Decimal(unittest.TestCase):
     def test_format_to_2_decimal(self):
