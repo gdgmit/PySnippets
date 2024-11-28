@@ -1,6 +1,6 @@
 
 import unittest
-from percentage_format import percentage_format
+from pysnippets.Numbers.percentage_format import percentage_format
 
 class TestPercentageFormat(unittest.TestCase):
     def test_percentage_format(self):

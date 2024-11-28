@@ -26,7 +26,7 @@ Wellcome To PySnippet's Mathematics Module Section, This Section Contains The Do
   - [Phase of a Complex Number](#phase-of-a-complex-number)
   - [Nth Roots of a Complex Number](#nth-roots-of-a-complex-number)
   - [Rotate a Complex Number](#rotate-a-complex-number)
-- [Complex Form Conversion](#complex-form-coversion)
+- [Complex Form Conversion](#complex-form-conversion)
   - [Polar to Rectangular](#polar-to-rectangular)
   - [Rectangular to Polar](#rectangular-to-polar)
   - [Bulk Polar to Rectangular](#bulk-polar-to-rectangular)
@@ -371,6 +371,199 @@ rotate_complex(c, theta, degrees=False)
 >>> rotate_complex((1, 2), 90, degrees=True)
 (-2.0, 1.0)
 ```
+
+---
+
+## Complex Form Conversion
+
+### Polar to Rectangular
+
+Converts polar coordinates to rectangular coordinates.
+
+```python
+polar_to_rectangular(r, theta, degrees=False)
+```
+
+- **Args**:
+  - `r` (float): The radial distance from the origin.
+  - `theta` (float): The angle in radians (or degrees if `degrees=True`).
+  - `degrees` (bool): Whether the angle is in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `tuple`: Rectangular coordinates as `(x, y)`.
+
+- **Example**:
+  ```python
+  >>> polar_to_rectangular(5, 45, degrees=True)
+  (3.5355339059327378, 3.5355339059327373)
+  ```
+
+---
+
+### Rectangular to Polar
+
+Converts rectangular coordinates to polar coordinates.
+
+```python
+rectangular_to_polar(x, y, degrees=False)
+```
+
+- **Args**:
+  - `x` (float): The x-coordinate.
+  - `y` (float): The y-coordinate.
+  - `degrees` (bool): Whether to return the angle in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `tuple`: Polar coordinates as `(r, theta)`.
+
+- **Example**:
+  ```python
+  >>> rectangular_to_polar(3, 4)
+  (5.0, 0.9272952180016122)
+  ```
+
+---
+
+### Bulk Polar to Rectangular
+
+Converts a list of polar coordinates to rectangular coordinates.
+
+```python
+bulk_polar_to_rectangular(polar_list, degrees=False)
+```
+
+- **Args**:
+  - `polar_list` (list): List of tuples containing polar coordinates `(r, theta)`.
+  - `degrees` (bool): Whether the angles are in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `list`: List of rectangular coordinates.
+
+- **Example**:
+  ```python
+  >>> bulk_polar_to_rectangular([(5, 45), (10, 30)], degrees=True)
+  [(3.5355339059327378, 3.5355339059327373), (8.660254037844386, 4.999999999999999)]
+  ```
+
+---
+
+### Bulk Rectangular to Polar
+
+Converts a list of rectangular coordinates to polar coordinates.
+
+```python
+bulk_rectangular_to_polar(rectangular_list, degrees=False)
+```
+
+- **Args**:
+  - `rectangular_list` (list): List of tuples containing rectangular coordinates `(x, y)`.
+  - `degrees` (bool): Whether to return the angle in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `list`: List of polar coordinates.
+
+- **Example**:
+  ```python
+  >>> bulk_rectangular_to_polar([(3, 4), (5, 12)])
+  [(5.0, 0.9272952180016122), (13.0, 1.176005207095135)]
+  ```
+
+---
+
+### Cylindrical to Rectangular
+
+Converts cylindrical coordinates to rectangular coordinates.
+
+```python
+cylindrical_to_rectangular(r, theta, z, degrees=False)
+```
+
+- **Args**:
+  - `r` (float): The radial distance.
+  - `theta` (float): The angle in radians (or degrees if `degrees=True`).
+  - `z` (float): The height along the z-axis.
+  - `degrees` (bool): Whether `theta` is in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `tuple`: The rectangular coordinates as `(x, y, z)`.
+
+- **Example**:
+  ```python
+  >>> cylindrical_to_rectangular(5, 45, 10, degrees=True)
+  (3.5355339059327378, 3.5355339059327373, 10)
+  ```
+
+---
+
+### Rectangular to Cylindrical
+
+Converts rectangular coordinates to cylindrical coordinates.
+
+```python
+rectangular_to_cylindrical(x, y, z, degrees=False)
+```
+
+- **Args**:
+  - `x` (float): The x-coordinate.
+  - `y` (float): The y-coordinate.
+  - `z` (float): Height along the z-axis.
+  - `degrees` (bool): Whether to return the angle in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `tuple`: Cylindrical coordinates as `(r, theta, z)`.
+
+- **Example**:
+  ```python
+  >>> rectangular_to_cylindrical(3, 4, 10)
+  (5.0, 0.9272952180016122, 10)
+  ```
+
+---
+
+### Polar to Complex 
+
+Converts polar coordinates to a complex number.
+
+```python
+polar_to_complex(r, theta, degrees=False)
+```
+
+- **Args**:
+  - `r` (float): Radial distance.
+  - `theta` (float): Angle in radians (or degrees if `degrees=True`).
+  - `degrees` (bool): Whether the angle is in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `complex`: Complex number.
+
+- **Example**:
+  ```python
+  >>> polar_to_complex(5, 45, degrees=True)
+  (3.5355339059327378+3.5355339059327373j)
+  ```
+
+---
+
+### Complex to Polar
+
+Converts a complex number to polar coordinates.
+
+```python
+complex_to_polar(c, degrees=False)
+```
+
+- **Args**:
+  - `c` (complex): A complex number.
+  - `degrees` (bool): Whether to return the angle in degrees. Defaults to `False`.
+
+- **Returns**:
+  - `tuple`: Polar coordinates as `(r, theta)`.
+
+- **Example**:
+  ```python
+  >>> complex_to_polar(3 + 4j)
+  (5.0, 0.9272952180016122)
+  ```
 
 ---
 
